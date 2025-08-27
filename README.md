@@ -46,6 +46,9 @@ leetcode-practice/
 
 ## 📅 Tiến độ luyện tập
 
+ - Two Sum ✅ (2025-08-26) 
+ - Contains Duplicate ✅ (2025-08-27)
+
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
 ---
