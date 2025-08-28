@@ -58,3 +58,27 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Brute Force chỉ để tham khảo, không nên dùng thực tế.  
 
 ---
+
+### Day 03 (2025-08-28)
+- **Top75**: Best Time to Buy and Sell Stock ✅
+  - **Ý tưởng**:
+    - **Brute Force**:  
+      - Duyệt qua mọi cặp `(buy, sell)` với `buy < sell`.  
+      - Tính `profit = prices[sell] - prices[buy]`.  
+      - Giữ lại lợi nhuận lớn nhất.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n^2)`  
+        - 💾 Không gian: `O(1)`  
+    - **One-Pass (Tối ưu)**:  
+      - Duyệt mảng 1 lần, theo dõi **minPrice** (giá nhỏ nhất từ đầu đến hiện tại).  
+      - Với mỗi giá `price`, tính `profit = price - minPrice`.  
+      - Cập nhật `maxProfit` nếu `profit` lớn hơn.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(1)`  
+  - **Ghi chú**:  
+    - Đây là bài “khởi đầu” cho chuỗi bài **Stock Problems**.  
+    - Tư duy quan trọng: **theo dõi min giá trước đó** và **so sánh chênh lệch**.  
+    - Các biến thể nâng cao (Stock II, III, IV, k transactions) sẽ cần DP.
+
+---
