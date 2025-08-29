@@ -82,3 +82,32 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Các biến thể nâng cao (Stock II, III, IV, k transactions) sẽ cần DP.
 
 ---
+
+### Day 04 (2025-08-29)
+- **Top75**: Valid Anagram ✅
+  - **Ý tưởng**:
+    - **Brute Force (Sort + So sánh)**:  
+      - Sắp xếp 2 chuỗi rồi so sánh từng ký tự.  
+      - Nếu giống nhau → là anagram.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n log n)`  
+        - 💾 Không gian: `O(1)` hoặc `O(n)` tùy sort.  
+    - **Hash Map (Tối ưu cho lowercase)**:  
+      - Đếm tần suất ký tự trong chuỗi `s`.  
+      - Trừ đi tần suất ký tự trong chuỗi `t`.  
+      - Nếu có ký tự nào âm → không phải anagram.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(1)` (26 ký tự tiếng Anh).  
+    - **Unicode-Friendly (Tổng quát)**:  
+      - Sử dụng hash map để đếm tần suất ký tự dạng `rune`.  
+      - Áp dụng cho mọi ngôn ngữ, kể cả Unicode.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(k)` với `k` là số ký tự khác nhau.  
+  - **Ghi chú**:  
+    - Hash Map là cách tối ưu cho input chữ thường.  
+    - Với Unicode, cần dùng map rune để xử lý tổng quát.  
+    - Bài này rèn luyện kỹ năng **count frequency** – nền tảng cho nhiều bài liên quan đến chuỗi.  
+
+---

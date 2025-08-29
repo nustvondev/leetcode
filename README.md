@@ -49,6 +49,7 @@ leetcode-practice/
  - Two Sum ✅ (2025-08-26) 
  - Contains Duplicate ✅ (2025-08-27)
  - Best Time to Buy and Sell Stock ✅ (2025-08-28)
+ - Valid Anagram ✅ (2025-08-29)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
