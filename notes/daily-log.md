@@ -111,3 +111,35 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Bài này rèn luyện kỹ năng **count frequency** – nền tảng cho nhiều bài liên quan đến chuỗi.  
 
 ---
+
+
+### Day 05 (2025-09-03)
+- **Top75**: Valid Parentheses ✅
+  - **Ý tưởng**:
+    - **Brute Force (String Replace)**:  
+      - Liên tục thay thế các cặp `"()"`, `"{}"`, `"[]"` bằng chuỗi rỗng.  
+      - Nếu cuối cùng chuỗi rỗng → hợp lệ.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n^2)` trong trường hợp xấu.  
+        - 💾 Không gian: `O(n)` do tạo chuỗi mới.  
+    - **Stack (Chuẩn – Best Practice)**:  
+      - Duyệt từng ký tự trong chuỗi:  
+        - Nếu là ngoặc mở → push vào stack.  
+        - Nếu là ngoặc đóng → kiểm tra top của stack có khớp không.  
+      - Cuối cùng stack rỗng → hợp lệ.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(n)`  
+    - **Optimized Stack (Push ngoặc cần đóng)**:  
+      - Khi gặp `(` thì push `)`, gặp `[` thì push `]`, gặp `{` thì push `}`.  
+      - Khi gặp ngoặc đóng, chỉ cần so với top stack.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(n)`  
+  - **Ghi chú**:  
+    - Stack là giải pháp tối ưu và dễ cài đặt nhất.  
+    - Cách push “ngoặc cần đóng” giúp code gọn hơn.  
+    - Đây là bài rèn luyện tư duy **stack ứng dụng cho kiểm tra cấu trúc** (parsing, compiler, expression).  
+
+
+---
