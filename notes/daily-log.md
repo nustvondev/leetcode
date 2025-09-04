@@ -143,3 +143,46 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 
 
 ---
+
+
+### Day 06 (2025-09-04)
+- **Top75**: Maximum Subarray ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n³))**:  
+      - Duyệt tất cả các subarray `(i..j)`.  
+      - Tính tổng từng subarray, lấy max.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n^3)`  
+        - 💾 Không gian: `O(1)`  
+    - **Prefix Sum (O(n²))**:  
+      - Tính prefix sum: `prefix[i] = tổng nums[0..i-1]`.  
+      - Subarray sum `(i..j) = prefix[j+1] - prefix[i]`.  
+      - Giảm 1 vòng lặp so với brute force.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n^2)`  
+        - 💾 Không gian: `O(n)`  
+    - **Kadane’s Algorithm (O(n)) – Best Practice**:  
+      - Duyệt mảng 1 lần:  
+        - Với mỗi `nums[i]`, chọn giữa bắt đầu subarray mới (`nums[i]`) hoặc nối tiếp subarray trước (`currSum + nums[i]`).  
+        - Cập nhật `maxSum`.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(1)`  
+    - **Divide & Conquer (O(n log n))**:  
+      - Chia đôi mảng thành left và right.  
+      - Kết quả tối đa là max của:  
+        1. Subarray max bên trái  
+        2. Subarray max bên phải  
+        3. Subarray max đi qua mid  
+      - Dùng đệ quy để giải từng phần.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n log n)`  
+        - 💾 Không gian: `O(log n)` (stack đệ quy)  
+  - **Ghi chú**:  
+    - Kadane’s là chuẩn nhất (O(n), O(1)).  
+    - Brute force & prefix sum giúp hiểu bản chất nhưng không thực tế.  
+    - Divide & Conquer hữu ích trong phỏng vấn để thể hiện tư duy thuật toán.  
+    - Đây là bài cực kỳ kinh điển, thường được hỏi trong interview để kiểm tra khả năng tối ưu tư duy.  
+
+
+---

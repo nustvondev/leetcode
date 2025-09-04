@@ -51,6 +51,7 @@ leetcode-practice/
  - Best Time to Buy and Sell Stock ✅ (2025-08-28)
  - Valid Anagram ✅ (2025-08-29)
  - Valid Parentheses ✅ (2025-09-03)
+ - Maximum Subarray ✅ (2025-09-04)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
