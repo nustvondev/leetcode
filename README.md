@@ -52,6 +52,7 @@ leetcode-practice/
  - Valid Anagram ✅ (2025-08-29)
  - Valid Parentheses ✅ (2025-09-03)
  - Maximum Subarray ✅ (2025-09-04)
+ - Product of Array Except Self ✅ (2025-09-05)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 

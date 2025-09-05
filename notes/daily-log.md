@@ -186,3 +186,32 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 
 
 ---
+
+
+### Day 07 (2025-09-05)
+- **Top75**: Product of Array Except Self ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n²))**:  
+      - Với mỗi `i`, tính tích tất cả phần tử trừ `nums[i]`.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n²)`  
+        - 💾 Không gian: `O(1)`  
+    - **Prefix & Suffix Arrays (O(n), O(n))**:  
+      - Lưu `prefix[i] = tích từ trái`.  
+      - Lưu `suffix[i] = tích từ phải`.  
+      - Kết quả = `prefix[i] * suffix[i]`.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(n)`  
+    - **Optimized Prefix-Suffix (O(n), O(1)) – Best Practice**:  
+      - Dùng `res[]` để lưu prefix.  
+      - Một vòng từ phải sang trái để nhân suffix.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(1)` (không tính `res`).  
+  - **Ghi chú**:  
+    - Đây là dạng bài kinh điển cho kỹ thuật **prefix-suffix**.  
+    - Hạn chế “không dùng chia” giúp luyện tư duy tối ưu.  
+    - Phiên bản O(1) space là chuẩn để nhớ và dùng trong interview.  
+
+---
