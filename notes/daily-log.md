@@ -215,3 +215,27 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Phiên bản O(1) space là chuẩn để nhớ và dùng trong interview.  
 
 ---
+
+
+### Day 08 (2025-09-08)
+- **Top75**: 3Sum ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n³))**:  
+      - Duyệt tất cả bộ ba `(i, j, k)`.  
+      - Nếu tổng = 0 thì lưu kết quả (dùng set để tránh trùng).  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n³)`  
+        - 💾 Không gian: `O(n²)` để lưu kết quả.  
+    - **Sorting + Two Pointers (O(n²)) – Best Practice**:  
+      - Sort mảng trước.  
+      - Với mỗi `nums[i]`, dùng hai con trỏ `l` và `r` để tìm `nums[l] + nums[r] = -nums[i]`.  
+      - Nếu sum = 0 → lưu triplet, di chuyển con trỏ và skip duplicates.  
+      - Nếu sum < 0 → tăng `l`.  
+      - Nếu sum > 0 → giảm `r`.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n²)`  
+        - 💾 Không gian: `O(1)` (không tính output).  
+  - **Ghi chú**:  
+    - Đây là bài kinh điển dùng **Two Pointers + Sorting**.  
+    - Cần cẩn thận xử lý **duplicate triplets**.  
+    - Là nền tảng cho các biến thể nâng cao: **4Sum**, **k-Sum**, …  

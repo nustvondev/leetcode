@@ -53,6 +53,7 @@ leetcode-practice/
  - Valid Parentheses ✅ (2025-09-03)
  - Maximum Subarray ✅ (2025-09-04)
  - Product of Array Except Self ✅ (2025-09-05)
+ - 3Sum ✅ (2025-09-08)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
