@@ -54,6 +54,7 @@ leetcode-practice/
  - Maximum Subarray ✅ (2025-09-04)
  - Product of Array Except Self ✅ (2025-09-05)
  - 3Sum ✅ (2025-09-08)
+ - Merge Intervals ✅ (2025-09-09)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 

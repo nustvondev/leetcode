@@ -239,3 +239,33 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Đây là bài kinh điển dùng **Two Pointers + Sorting**.  
     - Cần cẩn thận xử lý **duplicate triplets**.  
     - Là nền tảng cho các biến thể nâng cao: **4Sum**, **k-Sum**, …  
+
+---
+
+
+---
+
+## 3. Daily Note (📅 Day 09 – 2025-09-09)
+
+```markdown
+### Day 09 (2025-09-09)
+- **Top75**: Merge Intervals ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n²))**:  
+      - So sánh từng cặp interval để xem có overlap không.  
+      - Nếu có → merge, lặp lại cho đến khi không merge được nữa.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n²)`  
+        - 💾 Không gian: `O(n)`  
+    - **Sorting + Greedy (O(n log n)) – Best Practice**:  
+      - Sort intervals theo `start`.  
+      - Duyệt tuần tự, so với interval cuối trong `res`:  
+        - Nếu overlap → merge lại.  
+        - Nếu không → push interval mới vào.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n log n)` (do sort).  
+        - 💾 Không gian: `O(1)` (nếu tái sử dụng input).  
+  - **Ghi chú**:  
+    - Đây là bài cơ bản về **interval problems**.  
+    - Pattern thường gặp: **sort + merge**.  
+    - Quan trọng cho các bài nâng cao: **Insert Interval, Meeting Rooms, Employee Free Time**.  
