@@ -242,12 +242,6 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 
 ---
 
-
----
-
-## 3. Daily Note (📅 Day 09 – 2025-09-09)
-
-```markdown
 ### Day 09 (2025-09-09)
 - **Top75**: Merge Intervals ✅
   - **Ý tưởng**:
@@ -269,3 +263,27 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Đây là bài cơ bản về **interval problems**.  
     - Pattern thường gặp: **sort + merge**.  
     - Quan trọng cho các bài nâng cao: **Insert Interval, Meeting Rooms, Employee Free Time**.  
+
+---
+
+### Day 10 (2025-09-10)
+- **Top75**: Group Anagrams ✅
+  - **Ý tưởng**:
+    - **Sorting Key (O(n·k log k))**:  
+      - Sort từng từ → dùng làm key trong map.  
+      - Các từ có key giống nhau thì chung 1 nhóm.  
+    - **Frequency Count Key (O(n·k)) – Best Practice**:  
+      - Dùng mảng 26 phần tử lưu tần suất ký tự.  
+      - Biến thành chuỗi (hashable) để làm key map.  
+      - Tốt hơn khi `k` lớn vì không cần sort.  
+  - **Độ phức tạp**:
+    - Sorting:  
+      - ⏱️ Thời gian: `O(n·k log k)`  
+      - 💾 Không gian: `O(n·k)`  
+    - Counting:  
+      - ⏱️ Thời gian: `O(n·k)`  
+      - 💾 Không gian: `O(n·k)`  
+  - **Ghi chú**:  
+    - Đây là bài kinh điển về **hashing + grouping**.  
+    - Hai cách thường gặp: **sort** vs **frequency**.  
+    - Pattern lặp lại trong nhiều bài: **valid anagram, group shifting strings, alien dictionary**.  
