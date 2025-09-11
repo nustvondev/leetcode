@@ -287,3 +287,28 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Đây là bài kinh điển về **hashing + grouping**.  
     - Hai cách thường gặp: **sort** vs **frequency**.  
     - Pattern lặp lại trong nhiều bài: **valid anagram, group shifting strings, alien dictionary**.  
+
+---
+
+### Day 11 (2025-09-11)
+- **Top75**: Maximum Product Subarray ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n²))**:  
+      - Duyệt mọi subarray, tính product và lấy max.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n²)`  
+        - 💾 Không gian: `O(1)`  
+    - **DP với Max/Min So Far (O(n)) – Best Practice**:  
+      - Duy trì `maxSoFar` và `minSoFar` vì số âm có thể lật dấu.  
+      - Nếu `num < 0` → swap `maxSoFar` và `minSoFar`.  
+      - Update:  
+        - `maxSoFar = max(num, num * maxSoFar)`  
+        - `minSoFar = min(num, num * minSoFar)`  
+      - Kết quả = max của tất cả `maxSoFar`.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(n)`  
+        - 💾 Không gian: `O(1)`  
+  - **Ghi chú**:  
+    - Đây là bài đặc trưng của **Dynamic Programming** dạng `tracking max/min`.  
+    - Lưu ý case đặc biệt khi gặp số 0 hoặc số âm liên tiếp.  
+    - Pattern thường xuất hiện trong các bài: **Maximum Sum Subarray (Kadane)** và các biến thể với tích/tổng.  

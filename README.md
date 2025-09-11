@@ -56,6 +56,7 @@ leetcode-practice/
  - 3Sum ✅ (2025-09-08)
  - Merge Intervals ✅ (2025-09-09)
  - Group Anagrams ✅ (2025-09-10)
+ - Maximum Product Subarray ✅ (2025-09-11)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
