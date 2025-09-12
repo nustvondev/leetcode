@@ -312,3 +312,24 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Đây là bài đặc trưng của **Dynamic Programming** dạng `tracking max/min`.  
     - Lưu ý case đặc biệt khi gặp số 0 hoặc số âm liên tiếp.  
     - Pattern thường xuất hiện trong các bài: **Maximum Sum Subarray (Kadane)** và các biến thể với tích/tổng.  
+
+
+---
+
+### Day 12 (2025-09-12)
+- **Top75**: Search in Rotated Sorted Array ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n))**:  
+      - Duyệt từng phần tử, return index nếu tìm thấy.  
+      - Không đáp ứng yêu cầu O(log n).  
+    - **Binary Search (O(log n)) – Best Practice**:  
+      - Mỗi lần chia đôi, ít nhất 1 nửa mảng vẫn sorted.  
+      - Kiểm tra target có thuộc nửa sorted hay không → quyết định dịch left/right.  
+      - **Độ phức tạp**:  
+        - ⏱️ Thời gian: `O(log n)`  
+        - 💾 Không gian: `O(1)`  
+  - **Ghi chú**:  
+    - Đây là bài điển hình áp dụng **Binary Search trên mảng xoay vòng**.  
+    - Pattern hữu ích cho nhiều bài dạng:  
+      - **Find Minimum in Rotated Sorted Array**  
+      - **Search in Rotated Sorted Array II** (có duplicate). 

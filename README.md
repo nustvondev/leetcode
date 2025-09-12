@@ -57,6 +57,7 @@ leetcode-practice/
  - Merge Intervals ✅ (2025-09-09)
  - Group Anagrams ✅ (2025-09-10)
  - Maximum Product Subarray ✅ (2025-09-11)
+ - Search in Rotated Sorted Array ✅ (2025-09-12)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
