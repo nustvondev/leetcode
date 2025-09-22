@@ -333,3 +333,22 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Pattern hữu ích cho nhiều bài dạng:  
       - **Find Minimum in Rotated Sorted Array**  
       - **Search in Rotated Sorted Array II** (có duplicate). 
+
+
+---
+
+### Day 13 (2025-09-22)
+- **Top75**: Reverse Linked List ✅
+  - **Ý tưởng**:
+    - **Iterative (O(n), O(1))**:
+      - Dùng 3 con trỏ: prev, curr, next.
+      - Đảo liên kết từng bước.
+    - **Recursive (O(n), O(n))**:
+      - Đệ quy đến cuối danh sách.
+      - Khi quay lui, đảo chiều con trỏ.
+  - **Độ phức tạp**:
+    - ⏱️ Thời gian: `O(n)`  
+    - 💾 Không gian: Iterative `O(1)`, Recursive `O(n)` (stack).  
+  - **Ghi chú**:  
+    - Đây là bài kinh điển để ôn **Linked List manipulation**.  
+    - Interview thường yêu cầu biết cả 2 cách.  
