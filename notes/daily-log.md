@@ -352,3 +352,23 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:  
     - Đây là bài kinh điển để ôn **Linked List manipulation**.  
     - Interview thường yêu cầu biết cả 2 cách.  
+
+---
+
+### Day 14 (2025-09-23)
+- **Top75**: Linked List Cycle ✅
+  - **Ý tưởng**:
+    - **HashSet (O(n), O(n))**:  
+      - Lưu node đã đi qua.  
+      - Nếu gặp lại node → có cycle.  
+    - **Floyd’s Algorithm (O(n), O(1)) – Best Practice**:  
+      - Slow pointer đi 1 bước, fast pointer đi 2 bước.  
+      - Nếu gặp nhau → cycle tồn tại.  
+      - Nếu fast chạm nil → không có cycle.  
+  - **Độ phức tạp**:
+    - ⏱️ Thời gian: `O(n)`  
+    - 💾 Không gian: HashSet `O(n)`, Floyd `O(1)`  
+  - **Ghi chú**:  
+    - Bài này cực kỳ quan trọng, là pattern chung để tìm cycle.  
+    - Mở rộng:  
+      - **Linked List Cycle II** → tìm node bắt đầu cycle.  
