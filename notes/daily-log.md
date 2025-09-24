@@ -372,3 +372,23 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
     - Bài này cực kỳ quan trọng, là pattern chung để tìm cycle.  
     - Mở rộng:  
       - **Linked List Cycle II** → tìm node bắt đầu cycle.  
+
+---
+
+
+### Day 15 (2025-09-24)
+- **Top75**: Container With Most Water ✅
+  - **Ý tưởng**:
+    - **Brute Force (O(n²))**:  
+      - Thử tất cả cặp `(i, j)`, tính area = min(height[i], height[j]) * (j - i).  
+      - Quá chậm với n=1e5.  
+    - **Two Pointers (O(n)) – Best Practice**:  
+      - Bắt đầu từ 2 đầu mảng (left=0, right=n-1).  
+      - Tính area, cập nhật max.  
+      - Di chuyển con trỏ có height nhỏ hơn vào trong.  
+  - **Độ phức tạp**:
+    - ⏱️ Thời gian: `O(n)`  
+    - 💾 Không gian: `O(1)`  
+  - **Ghi chú**:  
+    - Đây là pattern điển hình: **Two Pointers for optimization**.  
+    - Trực giác: dịch con trỏ chiều cao nhỏ để có cơ hội tăng diện tích.  
