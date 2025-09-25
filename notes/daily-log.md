@@ -392,3 +392,20 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:  
     - Đây là pattern điển hình: **Two Pointers for optimization**.  
     - Trực giác: dịch con trỏ chiều cao nhỏ để có cơ hội tăng diện tích.  
+
+---
+
+
+### Day 16 (2025-09-25)
+- **Top75**: Find Minimum in Rotated Sorted Array ✅
+  - **Ý tưởng**:
+    - Mảng đã **sorted + rotated** → luôn có một nửa được sort.
+    - So sánh `nums[mid]` với `nums[right]`:
+      - Nếu `nums[mid] > nums[right]` → min nằm bên phải.
+      - Ngược lại → min nằm bên trái (bao gồm mid).
+  - **Độ phức tạp**:
+    - ⏱️ Thời gian: `O(log n)`
+    - 💾 Không gian: `O(1)`
+  - **Ghi chú**:
+    - Đây là dạng **Binary Search template** rất phổ biến trong các bài rotated array.
+    - Pattern này cũng áp dụng cho LeetCode 33, 81.
