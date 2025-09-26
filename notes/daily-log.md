@@ -409,3 +409,20 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:
     - Đây là dạng **Binary Search template** rất phổ biến trong các bài rotated array.
     - Pattern này cũng áp dụng cho LeetCode 33, 81.
+
+---
+
+
+### Day 17 (2025-09-26)
+- **Top75**: Longest Repeating Character Replacement ✅
+  - **Ý tưởng**:
+    - Dùng **sliding window** + đếm tần suất ký tự.
+    - Luôn giữ `maxCount` = số lần xuất hiện nhiều nhất trong cửa sổ.
+    - Điều kiện hợp lệ: `(window size - maxCount) <= k`.
+    - Nếu không hợp lệ → thu nhỏ cửa sổ từ bên trái.
+  - **Độ phức tạp**:
+    - ⏱️ Thời gian: `O(n)`
+    - 💾 Không gian: `O(1)` (26 ký tự uppercase).
+  - **Ghi chú**:
+    - Pattern sliding window tương tự bài **Longest Substring Without Repeating Characters**.
+    - Chú ý **maxCount không giảm** khi thu hẹp cửa sổ → nhưng vẫn đúng, vì kết quả chỉ cần tìm độ dài lớn nhất.

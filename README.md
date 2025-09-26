@@ -62,6 +62,7 @@ leetcode-practice/
  - Linked List Cycle ✅ (2025-09-23)
  - Container With Most Water ✅ (2025-09-24)
  - Find Minimum in Rotated Sorted Array ✅ (2025-09-25)
+ - Longest Repeating Character Replacement ✅ (2025-09-26)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
