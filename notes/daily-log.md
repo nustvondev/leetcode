@@ -426,3 +426,19 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:
     - Pattern sliding window tương tự bài **Longest Substring Without Repeating Characters**.
     - Chú ý **maxCount không giảm** khi thu hẹp cửa sổ → nhưng vẫn đúng, vì kết quả chỉ cần tìm độ dài lớn nhất.
+
+
+--- 
+
+### Day 18 (2025-09-29)
+- **Top75**: Longest Substring Without Repeating Characters ✅
+  - **Ý tưởng**:
+    - Dùng **sliding window + map** lưu vị trí xuất hiện cuối cùng.
+    - Khi gặp ký tự trùng → dịch `left` sang phải.
+    - Cập nhật `maxLen`.
+  - **Độ phức tạp**:
+    - ⏱️ O(n) thời gian.
+    - 💾 O(k) không gian (k = kích thước bảng mã, ASCII ≤ 128).
+  - **Ghi chú**:
+    - Đây là bài **khởi đầu** cho rất nhiều sliding window pattern.
+    - Quan trọng: `left` chỉ tăng, không bao giờ giảm.
