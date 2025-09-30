@@ -442,3 +442,18 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:
     - Đây là bài **khởi đầu** cho rất nhiều sliding window pattern.
     - Quan trọng: `left` chỉ tăng, không bao giờ giảm.
+
+---
+
+### Day 19 (2025-09-30)
+- **Top75**: Number of Islands ✅
+  - **Ý tưởng**:
+    - Duyệt từng ô trong grid.
+    - Khi gặp `'1'`, coi như bắt đầu một đảo mới → DFS/BFS lan ra đánh dấu visited.
+    - Đếm số lần khởi động DFS → chính là số đảo.
+  - **Độ phức tạp**:
+    - ⏱️ O(m × n) thời gian.
+    - 💾 O(m × n) không gian (stack/queue).
+  - **Ghi chú**:
+    - Bài này là nền tảng cho mọi bài **connected components** trong graph.
+    - Quan trọng để hiểu pattern DFS/BFS trên ma trận.

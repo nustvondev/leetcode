@@ -64,6 +64,7 @@ leetcode-practice/
  - Find Minimum in Rotated Sorted Array ✅ (2025-09-25)
  - Longest Repeating Character Replacement ✅ (2025-09-26)
  - Longest Substring Without Repeating Characters ✅ (2025-09-29)
+ - Number of Islands ✅ (2025-09-30)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
