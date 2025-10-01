@@ -457,3 +457,18 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:
     - Bài này là nền tảng cho mọi bài **connected components** trong graph.
     - Quan trọng để hiểu pattern DFS/BFS trên ma trận.
+
+---
+
+### Day 20 (2025-10-01)
+- **Top75**: Remove Nth Node From End of List ✅
+  - **Ý tưởng**:
+    - Dùng **dummy node** để tránh case xoá head.
+    - Dùng **two pointers**: fast đi trước n+1 bước → sau đó cùng chạy với slow.
+    - Khi fast hết → slow ngay trước node cần xoá.
+  - **Độ phức tạp**:
+    - ⏱️ O(L) với L = độ dài list.
+    - 💾 O(1) không gian.
+  - **Ghi chú**:
+    - Đây là bài kinh điển để luyện kỹ thuật two pointers trong linked list.
+    - Dummy node giúp code clean, tránh if else khi xoá head.

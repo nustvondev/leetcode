@@ -65,6 +65,7 @@ leetcode-practice/
  - Longest Repeating Character Replacement ✅ (2025-09-26)
  - Longest Substring Without Repeating Characters ✅ (2025-09-29)
  - Number of Islands ✅ (2025-09-30)
+ - Remove Nth Node From End of List ✅ (2025-10-01)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
