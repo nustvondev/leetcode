@@ -472,3 +472,31 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - **Ghi chú**:
     - Đây là bài kinh điển để luyện kỹ thuật two pointers trong linked list.
     - Dummy node giúp code clean, tránh if else khi xoá head.
+
+---
+
+### Day 21 (2025-10-02)
+- **Top75**: Palindromic Substrings ✅
+  - **Ý tưởng**:
+    - Dùng kỹ thuật **Expand Around Center**.
+    - Có `2n - 1` tâm: n cho palin lẻ, n-1 cho palin chẵn.
+    - Mỗi lần mở rộng kiểm tra ký tự trái phải có bằng nhau không.
+  - **Độ phức tạp**:
+    - ⏱️ O(n^2), vì mỗi tâm mở rộng tối đa n.
+    - 💾 O(1).
+  - **Ghi chú**:
+    - Đây là một dạng “trick” để đếm palindrome mà không cần DP table.
+    - Nếu muốn, có thể làm bằng **DP[i][j]**: true nếu substring i..j palindrome → cũng O(n^2) nhưng tốn O(n^2) space.
+
+---
+
+### Day 22 (2025-10-03)
+- **Top75**: Pacific Atlantic Water Flow ✅
+  - Ý tưởng: thay vì đi từ mỗi ô ra biển → đi từ biển vào trong.
+  - Dùng DFS/BFS đánh dấu 2 tập (Pacific, Atlantic).
+  - Lấy giao 2 tập → kết quả.
+- Complexity:
+  - ⏱️ O(m*n)
+  - 💾 O(m*n)
+- Ghi chú:
+  - Cách đảo ngược tư duy (reverse flow) là chìa khóa.

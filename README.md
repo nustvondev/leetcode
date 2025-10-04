@@ -66,6 +66,8 @@ leetcode-practice/
  - Longest Substring Without Repeating Characters ✅ (2025-09-29)
  - Number of Islands ✅ (2025-09-30)
  - Remove Nth Node From End of List ✅ (2025-10-01)
+ - Palindromic Substrings ✅ (2025-10-02)
+ - Pacific Atlantic Water Flow ✅ (2025-10-03)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
