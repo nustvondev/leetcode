@@ -500,3 +500,21 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - 💾 O(m*n)
 - Ghi chú:
   - Cách đảo ngược tư duy (reverse flow) là chìa khóa.
+
+---
+
+### Day 23 – Minimum Window Substring ✅ (2025-10-06)
+- **Chủ đề**: Sliding Window  
+- **Ý tưởng chính**:
+  - Duyệt chuỗi `s` bằng hai con trỏ `left` – `right`.
+  - Giữ một **bản đồ tần suất (map)** cho các ký tự cần trong `t`.
+  - Khi cửa sổ hiện tại chứa đủ ký tự của `t`, thử thu nhỏ để tìm **cửa sổ nhỏ nhất**.
+- **Độ phức tạp**:
+  - ⏱ O(m + n)
+  - 💾 O(1) (do chỉ dùng map ký tự ASCII)
+- **Ghi chú**:
+  - Đây là bài kinh điển trong nhóm “Sliding Window Hard”.
+  - Hiểu rõ cơ chế “have / need” rất quan trọng.
+  - Là nền tảng cho các bài như:
+    - `Permutation in String`
+    - `Minimum Window Subsequence`
