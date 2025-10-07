@@ -504,7 +504,7 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 ---
 
 ### Day 23 – Minimum Window Substring ✅ (2025-10-06)
-- **Chủ đề**: Sliding Window  
+-  **Top75**: Sliding Window  
 - **Ý tưởng chính**:
   - Duyệt chuỗi `s` bằng hai con trỏ `left` – `right`.
   - Giữ một **bản đồ tần suất (map)** cho các ký tự cần trong `t`.
@@ -518,3 +518,16 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - Là nền tảng cho các bài như:
     - `Permutation in String`
     - `Minimum Window Subsequence`
+
+---
+
+### Day 24 (2025-10-07)
+- **Top75**: Invert Binary Tree ✅  
+  - Bài kinh điển về **DFS + recursion**.  
+  - Ý tưởng chính: đảo vị trí left ↔ right ở mỗi node.  
+  - Giúp nắm chắc cách duyệt và thao tác trên cấu trúc cây.
+- Complexity:
+  - ⏱️ O(n)
+  - 💾 O(h)
+- Ghi chú:
+  - Dễ nhưng quan trọng, nền tảng cho các bài như Symmetric Tree, Mirror Tree.

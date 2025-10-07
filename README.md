@@ -69,6 +69,7 @@ leetcode-practice/
  - Palindromic Substrings ✅ (2025-10-02)
  - Pacific Atlantic Water Flow ✅ (2025-10-03)
  - Minimum Window Substring ✅ (2025-10-06)
+ - Invert Binary Tree ✅ (2025-10-07)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
