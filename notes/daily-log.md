@@ -531,3 +531,16 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   - 💾 O(h)
 - Ghi chú:
   - Dễ nhưng quan trọng, nền tảng cho các bài như Symmetric Tree, Mirror Tree.
+
+---
+
+### Day 25 (2025-10-08)
+* **Top75**: Validate Binary Search Tree ✅
+  * Dùng **DFS + giới hạn giá trị (min, max)** để kiểm tra tính hợp lệ.
+  * Mỗi node phải nằm trong phạm vi `(min, max)` tùy theo vị trí trong cây.
+  * Gợi nhớ bài toán kiểm tra cấu trúc ràng buộc trong cây.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(h)
+* Ghi chú:
+  * Bài này rất hay để hiểu rõ bản chất của cây tìm kiếm nhị phân.
