@@ -544,3 +544,16 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   * 💾 O(h)
 * Ghi chú:
   * Bài này rất hay để hiểu rõ bản chất của cây tìm kiếm nhị phân.
+
+---
+
+### Day 26 (2025-10-08)
+* **Top75**: Non-overlapping Intervals ✅
+  * Kỹ thuật: **Greedy chọn khoảng kết thúc sớm nhất**.
+  * Ý tưởng giống bài “Activity Selection Problem” trong thuật toán cổ điển.
+  * Sắp xếp theo `end time` để tối ưu số lượng giữ lại.
+* Complexity:
+  * ⏱️ O(n log n)
+  * 💾 O(1)
+* Ghi chú:
+  * Đây là một bài rất hay để luyện tư duy greedy tối ưu hoá lựa chọn.

@@ -71,6 +71,8 @@ leetcode-practice/
  - Minimum Window Substring ✅ (2025-10-06)
  - Invert Binary Tree ✅ (2025-10-07)
  - Validate Binary Search Tree ✅ (2025-10-08)
+ - Non-overlapping Intervals ✅ (2025-10-08)
+
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
