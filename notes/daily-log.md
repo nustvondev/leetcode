@@ -547,7 +547,7 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 
 ---
 
-### Day 26 (2025-10-08)
+### Day 26 (2025-10-09)
 * **Top75**: Non-overlapping Intervals ✅
   * Kỹ thuật: **Greedy chọn khoảng kết thúc sớm nhất**.
   * Ý tưởng giống bài “Activity Selection Problem” trong thuật toán cổ điển.
@@ -557,3 +557,28 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   * 💾 O(1)
 * Ghi chú:
   * Đây là một bài rất hay để luyện tư duy greedy tối ưu hoá lựa chọn.
+
+---
+
+### Day 27 (2025-10-10)
+* **Top75**: Construct Binary Tree from Preorder and Inorder Traversal ✅
+  * Tư duy chính: dùng **preorder để chọn root**, và **inorder để chia đôi cây**.
+  * Duy trì con trỏ `preIdx` trong preorder, tránh tạo mảng con để tối ưu.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(n)
+* Ghi chú:
+  * Đây là một trong những bài cơ bản và quan trọng nhất khi làm việc với cấu trúc cây nhị phân.
+
+---
+
+### Day 28 (2025-10-13)
+* **Top75**: Top K Frequent Elements ✅
+  * Cách tiếp cận chính: **HashMap + MinHeap (Priority Queue)**
+  * Tối ưu hơn so với sort toàn bộ mảng.
+* Complexity:
+  * ⏱️ O(n log k)
+  * 💾 O(n)
+* Ghi chú:
+  * Có thể cải tiến lên O(n) bằng **bucket sort** khi không yêu cầu thứ tự cụ thể.
+  * Đây là bài kinh điển giúp luyện kỹ năng thao tác với heap trong Go.
