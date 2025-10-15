@@ -582,3 +582,29 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 * Ghi chú:
   * Có thể cải tiến lên O(n) bằng **bucket sort** khi không yêu cầu thứ tự cụ thể.
   * Đây là bài kinh điển giúp luyện kỹ năng thao tác với heap trong Go.
+
+---
+
+* ### Day 29 (2025-10-14)
+* **Top75**: Clone Graph ✅
+  * Dùng DFS (hoặc BFS) để sao chép toàn bộ cấu trúc đồ thị.
+  * Cần chú ý xử lý **chu trình (cycle)** bằng `visited` map.
+* Complexity:
+  * ⏱️ O(N + E)
+  * 💾 O(N)
+* Ghi chú:
+  * Đây là bài tiêu biểu kiểm tra tư duy “deep copy” trong cấu trúc dữ liệu có liên kết vòng.
+  * Nên thử cả hai cách DFS và BFS để nắm rõ sự khác biệt về triển khai.
+
+---
+
+* ### Day 30 (2025-10-15)
+* **Top75**: Course Schedule ✅
+  * Mô hình đồ thị có hướng, phát hiện chu trình bằng DFS.
+  * Nếu có chu trình → không thể hoàn thành tất cả khóa học.
+* Complexity:
+  * ⏱️ O(V + E)
+  * 💾 O(V + E)
+* Ghi chú:
+  * Bài rất cơ bản để hiểu **Topological Sort**.
+  * Nên luyện cả 2 cách: DFS và BFS (Kahn’s Algorithm) để so sánh hiệu quả.
