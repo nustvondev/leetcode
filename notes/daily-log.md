@@ -608,3 +608,41 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 * Ghi chú:
   * Bài rất cơ bản để hiểu **Topological Sort**.
   * Nên luyện cả 2 cách: DFS và BFS (Kahn’s Algorithm) để so sánh hiệu quả.
+
+---
+
+### Day 31 (2025-10-16)
+* **Top75**: Serialize and Deserialize Binary Tree ✅
+  * Duyệt cây theo **Preorder**, thêm "null" khi gặp nút rỗng.
+  * Khi Deserialize, đọc lại chuỗi tuần tự để tái tạo cây gốc.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(n)
+* Ghi chú:
+  * Đây là bài kinh điển giúp hiểu rõ về cách lưu trữ cấu trúc dữ liệu dạng cây.
+  * DFS dễ viết hơn BFS trong bài này.
+
+---
+
+### Day 32 (2025-10-17)
+* **Top75**: Binary Tree Maximum Path Sum ✅
+  * DFS tìm **đường đi lớn nhất** trong cây.
+  * Với mỗi node: tính max bên trái và phải, bỏ qua nhánh âm.
+  * Cập nhật `maxSum` toàn cục.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(h)
+* Ghi chú:
+  * Bài này luyện kỹ năng đệ quy postorder và tối ưu biểu thức trong cây.
+ 
+---
+
+### Day 33 (2025-10-20)
+* **Top75**: Maximum Depth of Binary Tree ✅
+  * Bài cơ bản về **độ sâu của cây nhị phân**.
+  * DFS đệ quy: `depth = 1 + max(left, right)`.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(h)
+* Ghi chú:
+  * Cực kỳ quan trọng vì đây là pattern nền cho rất nhiều bài khác như Diameter, Balanced Tree, Path Sum,...
