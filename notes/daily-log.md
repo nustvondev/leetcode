@@ -646,3 +646,19 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
   * 💾 O(h)
 * Ghi chú:
   * Cực kỳ quan trọng vì đây là pattern nền cho rất nhiều bài khác như Diameter, Balanced Tree, Path Sum,...
+
+---
+
+### Day 34 (2025-10-21)
+* **Top75**: Same Tree ✅
+  * Bài so sánh hai cây nhị phân xem có giống nhau không.
+  * Dễ hiểu, base case rõ ràng:
+    * cả hai nil → true
+    * một nil, một không → false
+  * đệ quy xuống từng nhánh trái/phải.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(h)
+* Ghi chú:
+  * Bài này khá nhẹ, nhưng cực kỳ quan trọng để hiểu pattern **đệ quy trên cây**.
+  * Tương tự như kiểm tra **Subtree** hoặc **Mirror Tree**.

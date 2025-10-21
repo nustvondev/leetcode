@@ -78,8 +78,8 @@ leetcode-practice/
  - Course Schedule ✅ (2025-10-15)
  - Serialize and Deserialize Binary Tree ✅ (2025-10-16)
  - Binary Tree Maximum Path Sum ✅ (2025-10-17)
- - Maximum Depth of Binary Tree ✅ (2025-10-20)
-
+ - Maximum Depth of Binary Tree ✅ (2025-10-20) 
+ - Same Tree ✅ (2025-10-21)
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
 ---
