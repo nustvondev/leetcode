@@ -662,3 +662,30 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 * Ghi chú:
   * Bài này khá nhẹ, nhưng cực kỳ quan trọng để hiểu pattern **đệ quy trên cây**.
   * Tương tự như kiểm tra **Subtree** hoặc **Mirror Tree**.
+
+---
+
+### Day 35 (2025-10-22)
+* **Top75**: Binary Tree Level Order Traversal ✅
+  * Bài duyệt cây theo từng tầng — BFS cổ điển.
+  * Dùng queue để lưu node của từng level.
+  * Mỗi vòng lặp lấy toàn bộ node trong tầng hiện tại, rồi thêm con của chúng vào queue cho tầng kế tiếp.
+* Complexity:
+  * ⏱️ O(n)
+  * 💾 O(n)
+* Ghi chú:
+  * Cực kỳ hữu ích để hiểu bản chất **BFS**.
+  * Dạng nâng cao: Zigzag Order, Right View, Level Average.
+
+---
+
+### Day 36 (2025-10-23)
+* **Top75**: Subtree of Another Tree ✅
+  * Ý tưởng: kiểm tra xem `subRoot` có xuất hiện trong `root` không bằng cách duyệt DFS.
+  * Mỗi node trong `root` được so sánh với `subRoot` qua hàm `isSameTree`.
+* Complexity:
+  * ⏱️ O(m \* n)
+  * 💾 O(h)
+* Ghi chú:
+  * Bài này giúp hiểu cách **so sánh hai cây** và ứng dụng DFS cơ bản.
+  * Có thể cải thiện bằng serialize + string matching, nhưng không cần thiết trong đa số trường hợp.

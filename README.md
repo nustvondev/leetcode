@@ -80,6 +80,9 @@ leetcode-practice/
  - Binary Tree Maximum Path Sum ✅ (2025-10-17)
  - Maximum Depth of Binary Tree ✅ (2025-10-20) 
  - Same Tree ✅ (2025-10-21)
+ - Binary Tree Level Order Traversal ✅ (2025-10-22)
+ - Subtree of Another Tree ✅ (2025-10-23)
+
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 
 ---
