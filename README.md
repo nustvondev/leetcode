@@ -82,6 +82,8 @@ leetcode-practice/
  - Same Tree ✅ (2025-10-21)
  - Binary Tree Level Order Traversal ✅ (2025-10-22)
  - Subtree of Another Tree ✅ (2025-10-23)
+ - Lowest Common Ancestor of a BST ✅ (2025-10-24)
+ - Implement Trie (Prefix Tree) ✅ (2025-10-27)
 
 👉 Xem chi tiết trong [`notes/daily-log.md`](notes/daily-log.md)
 

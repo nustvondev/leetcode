@@ -689,3 +689,30 @@ Mỗi ngày mình sẽ ghi lại: **Ngày / Bài tập / Ý tưởng / Ghi chú*
 * Ghi chú:
   * Bài này giúp hiểu cách **so sánh hai cây** và ứng dụng DFS cơ bản.
   * Có thể cải thiện bằng serialize + string matching, nhưng không cần thiết trong đa số trường hợp.
+
+---
+
+### Day 37 (2025-10-24)
+* **Top75**: Lowest Common Ancestor of a BST ✅
+  * Ý tưởng: tận dụng tính chất BST để tìm node chia đôi (split point).
+  * Nếu cả hai nhỏ hơn root → đi trái; cả hai lớn hơn root → đi phải.
+  * Ngược lại, root chính là LCA.
+* Complexity:
+  * ⏱️ O(h)
+  * 💾 O(1) (iterative) / O(h) (recursive)
+* Ghi chú:
+  * Bài này minh họa sức mạnh của **BST property** giúp giảm độ phức tạp logic.
+
+---
+
+### Day 38 (2025-10-27)
+* **Top75**: Implement Trie (Prefix Tree) ✅
+  * Ý tưởng: cấu trúc cây lưu ký tự, mỗi node có map con và cờ kết thúc.
+  * 3 hàm chính: `Insert`, `Search`, `StartsWith`.
+  * Rất hay gặp trong bài toán autocomplete, dictionary, prefix lookup.
+* Complexity:
+  * ⏱️ O(L)
+  * 💾 O(N\*L)
+* Ghi chú:
+  * Trie giúp giảm đáng kể độ phức tạp khi làm việc với chuỗi lớn.
+  * Dễ mở rộng cho cả pattern matching hoặc word suggestion.
